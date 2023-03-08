@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sort -df | awk '{printf("%s%s", sep, $0); sep=", "}; END{print ""}' | sed -e 's/^\.\///g' -e 's/\/$/\//g'
+ls -A1 | sort -n -k1.1 | sed ':a;N;$!ba;s/\n/, /g;s/^\.\//.\//g;s/, \.\.//'
