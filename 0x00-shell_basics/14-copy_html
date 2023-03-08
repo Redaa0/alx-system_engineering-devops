@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -ru --update *.html ../ && echo "HTML files copied successfully."
+cp -ru --update *.html ../
